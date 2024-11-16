@@ -178,6 +178,7 @@ describe("integration test", function()
                     ["EFFECT"] = function() end,
                     ["R_EFFECT"] = function() end,
                 },
+                winblend = 5,
                 winhighlight = {
                     "NormalFloat:MasonNormal",
                     "CursorLine:MasonCursorLine",
@@ -197,6 +198,7 @@ describe("integration test", function()
             assert.spy(win_set_option).was_called_with(match.is_number(), "signcolumn", "no")
             assert.spy(win_set_option).was_called_with(match.is_number(), "colorcolumn", "")
             assert.spy(win_set_option).was_called_with(match.is_number(), "cursorline", true)
+            assert.spy(win_set_option).was_called_with(match.is_number(), "winblend", 5)
             assert
                 .spy(win_set_option)
                 .was_called_with(match.is_number(), "winhighlight", "NormalFloat:MasonNormal,CursorLine:MasonCursorLine")

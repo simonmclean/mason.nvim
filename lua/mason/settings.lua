@@ -89,6 +89,11 @@ local DEFAULT_SETTINGS = {
         -- - Float in the range of 0-1 for a percentage of screen height.
         height = 0.9,
 
+        ---@since 1.10.0
+        -- Transparency of the window. See :help 'winblend'
+        -- 0 is opaque, 100 is full transparent
+        winblend = 0,
+
         icons = {
             ---@since 1.0.0
             -- The list icon to use for installed packages.

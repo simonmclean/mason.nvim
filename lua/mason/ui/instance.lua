@@ -726,6 +726,7 @@ update_registry_info()
 window.init {
     effects = effects,
     border = settings.current.ui.border,
+    winblend = settings.current.ui.winblend,
     winhighlight = {
         "NormalFloat:MasonNormal",
     },

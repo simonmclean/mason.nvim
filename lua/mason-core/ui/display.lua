@@ -168,7 +168,7 @@ end
 -- exported for tests
 M._render_node = render_node
 
----@alias WindowOpts { effects?: table<string, fun()>, winhighlight?: string[], border?: string|table }
+---@alias WindowOpts { effects?: table<string, fun()>, winhighlight?: string[], border?: string|table, winblend?: number }
 
 ---@param size integer | float
 ---@param viewport integer
@@ -413,6 +413,7 @@ function M.new_view_only_win(name, filetype)
             signcolumn = "no",
             colorcolumn = "",
             cursorline = true,
+            winblend = window_opts.winblend
         }
 
         -- window options
